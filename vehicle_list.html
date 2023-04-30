@@ -1,0 +1,87 @@
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="quasar\static\css\style.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+
+    <title>VEHICLE LIST</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Sr_No</th>
+            <th>Car_Num_Plate</th>
+            <th>In_Time</th>
+        </thead>
+        <tbody id="tbody1"></tbody>
+    </table>
+
+    <script src="https://www.gstatic.comm/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.comm/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.comm/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+
+    <script>
+        
+
+        var stdNo=0;
+        var tbody=document.getElementById('tbody1');
+        function AddVehicleToTable(car_num_plate,in_time){
+            let trow=document.createElement("trow");
+            let td1=document.createElement('td');
+            let td2=document.createElement('td');
+            // let td3=document.createElement('td');
+
+            td1.innerHTML=++stdNo;
+            td2.innerHTML=++car_num_plate;
+            td3.innerHTML=++in_time;
+
+            trow.appendChild(td1);
+            trow.appendChild(td2);
+            trow.appendChild(td3);
+
+            tbody.appendChild(trow);
+            // td3.innerHTML=++stdNo;
+
+        }
+
+        function AddAllVehicleToTable(TheDriver){
+            stdNo=0;
+            tbody.innerHTML="";
+            TheDriver.forEach(element =>{
+                AddVehicleToTable(element.Field,element.Value);
+            });
+        }
+
+    </script>
+</body>
+</html> -->
+
+<div class="flex-container">
+    <div class="flex-box">
+        Slot 1
+    </div>
+
+    <div class="flex-box">
+        Slot 2
+    </div>
+
+    <div class="flex-box">
+        Slot 3
+    </div>
+
+    <div class="flex-box">
+        Slot 4
+    </div>
+
+    <div class="flex-box">
+        Slot 5
+    </div>
+</div>

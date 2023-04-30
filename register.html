@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+
+    <title>COMMUNITY CLASSROOM</title>
+</head>
+<body>
+    <!-- ************nav bar starts -->
+   <nav>
+    <div class="container nav__container">
+        <a href="index.html"><h4>COMMUNITY CLASSROOM</h4></a>
+        <ul class="nav__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li> 
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>
+   </nav> 
+   <!-- ************nav bar ends -->
+	<div class="container">
+		<form action="" method="POST" class="login-email">
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+			<div class="input-group">
+				<input type="text" placeholder="Teacher's Name" name="Teacher's Name" value="<?php echo $username; ?>" required>
+			</div>
+			<div class="input-group">
+				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+			</div>
+			<div class="input-group">
+				<input type="subject" placeholder="Subject" name="subject" value="<?php echo $subject; ?>" required>
+			</div>
+			<div class="input-group">
+				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
+            </div>
+            <div class="input-group">
+				<input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
+			</div>
+			<div class="input-group">
+				<button name="submit" class="btn">Register</button>
+			</div>
+			<p class="login-register-text">Have an account? <a href="index.php">Login Here</a>.</p>
+		</form>
+	</div>
+</body>
+</html>
